@@ -6,10 +6,13 @@
 
 	<body>
 		<h1>Title</h1>
-		<br>
-		<p>
-			This is the example next for the body of the text
-		</p>
+		<ul>
+			{% for post in site.posts %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
 	</body>
 
 </html>
