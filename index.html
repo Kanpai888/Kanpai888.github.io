@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Gen-Nam Lam</title>
-	</head>
+---
+layout: default
+title: Example
+---
 
-	<body>
-		<h1>Title - something</h1>
-		<ul>
-			{% for post in _posts %}
-			<li>
-				<a href="{{ post.url }}">{{ post.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-	</body>
 
-</html>
+
+<h1>Title - fsdgs</h1>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
