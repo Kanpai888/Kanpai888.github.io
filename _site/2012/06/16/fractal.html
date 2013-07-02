@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Personal Blog of Gen-Nam Lam</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href="/assets/css/bootstrap.css" rel="stylesheet">
+	<style type="text/css">
+	body {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+
+
+	</style>
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+      <![endif]-->
+
+
+  </head>
+
+  <body>
+
+  	<div class="navbar navbar-fixed-top">
+  		<div class="navbar-inner">
+  			<div class="container">
+  				<a class="brand" href="/index.html">gnlam.me</a>
+
+  					<ul class="nav pull-right">
+  						<li><a href="#">Home</a></li>
+  						<li><a href="#link">Blog Archive</a></li>
+  						<li><a href="#link">Projects</a></li>
+  						<li><a href="#link">CV</a><li>
+  						</ul>
+  				</div>
+  			</div>
+  		</div>
+
+  		<div class="container">
+  			<div class="row">
+  				
+				<div class="span9">
+	<div id="post">
+		<h2><a href="/2012/06/16/fractal.html">
+			Android Fractal Explorer;
+		</a></h2>
+		<div id="date">published 16 Jun 2012</div>
+		<hr>
+
+		<p>Hello again! Since I realise that it has been a significant since my first semester exams and first post. Its about time I finally post some updates! This is what I would consider to be my first piece of proper Android code though I had a crash course at DevXS hack weekend and contributed to the creation of Intr; the code I produced whilst fuelled with muffins, tea and a general lack of sleep would not have won any awards (well maybe the “What was I doing here?” award).</p>
+
+<p>This code was actually written a while ago, but I never got round to posting it. To start my introduction to the Android platform, I decided to implement a simple fractal explorer that would draw the Mandelbrot Set. As I had previously had experience with drawing fractals, the underlying logic was already known and the aim was to give me insight into the Android drawing libraries. For specifics about the Mandelbrot Set, see link.</p>
+
+<p>Current State In it’s current state it takes typically around 4 – 7 seconds to recalculate the data needed to draw the fractal (e.g. when you change the bounds), dependant on the CPU and resolution of the device. This means that its not overly practical to use. A possible method of making it quicker would be to reduce the number of calculations required, though we would effectively be losing detail in the fractal image.</p>
+
+<p>Plans I propose to use RenderScript to improve this as it operates on a lower level than the Java code that is typically used in Android programming and take advantage of the GPU which is ideal for parallel calculations. Unfortunately the RenderScript APIs were only introduced after Android 3.x Honeycomb, meaning that the app would not run on older devices.</p>
+
+<p>Additionally pinch to zoom is in the works, as well as support for other types of fractals such as the Burning Ship.</p>
+
+<p><img src='/assets/img/android_fractal.png' alt='Android Fractal' /></p>
+	</div>
+</div>
+
+  				
+  			</div><!--/row-->
+
+  			<hr>
+
+  			<footer>
+  				<p>&copy; Gen-Nam Lam 2013</p>
+  			</footer>
+
+  		</div>
+
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap-transition.js"></script>
+    <script src="/assets/js/bootstrap-alert.js"></script>
+    <script src="/assets/js/bootstrap-modal.js"></script>
+    <script src="/assets/js/bootstrap-dropdown.js"></script>
+    <script src="/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/js/bootstrap-tab.js"></script>
+    <script src="/assets/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/js/bootstrap-popover.js"></script>
+    <script src="/assets/js/bootstrap-button.js"></script>
+    <script src="/assets/js/bootstrap-collapse.js"></script>
+    <script src="/assets/js/bootstrap-carousel.js"></script>
+    <script src="/assets/js/bootstrap-typeahead.js"></script>
+
+</body>
+</html>
