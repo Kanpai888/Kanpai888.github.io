@@ -4,14 +4,13 @@ title: Example
 ---
 <div class="row">
 	<div class="span12">
-		<h1>What could possibly go wrong?</h1>
-		<h3>Best ethos ever</h3>
+		<h1>My Projects</h1>
 		<hr><br>
 	</div>
 </div>
 <div class="row">
 	<div class="span9">
-	  	{% for post in site.posts %}
+	  	{% for post in site.tags.project %}
 		    
 		      <a href="{{ post.url }}">
 		      	<h2>
