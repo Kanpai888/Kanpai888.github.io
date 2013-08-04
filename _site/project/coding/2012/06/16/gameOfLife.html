@@ -47,24 +47,51 @@
     <!-- Main body -->
 		<div class="container">
 			<div class="row">
-	<div class="col-lg-12">
-		<h1>About Me</h1>	
-		<hr>
+	<div class="col-lg-9">
+		<div id="post-header">
+			<h1><a href="/project/coding/2012/06/16/gameOfLife.html">
+				Game of Life
+			</a></h1>
+			<div id="date">published 16 Jun 2012</div>
+			<hr>
+
+			
+		</div>
 	</div>
 </div>
+
 <div class="row">
-	<div class="col-lg-3">
-		<img src="/assets/img/me-profile.jpeg" class="img-responsive" alt="Reponsive image">
+	<div class="col-lg-9">
+		<div id="post">
+
+			<p>This is a simple implementation of the Game of Life in Java. I coded this because I wanted something quick and simple to implement as I have been working recently and didn’t have time to work on anything large. You can download a executable jar here to try it out. Or you can find a video of the program running.</p>
+
+<h2 id='conways_game_of_life'>Conway’s Game of Life</h2>
+
+<p>The Game of Life can be envisioned as a two dimensional grid that contains cells. Each cell can be in a dead or alive state and at the start of each lifecycle, whether a cell is alive or dead is dependant on its number of alive neighbours. A neighbour can be horizontally, vertically or diagonally adjacent and the querying happens simultaneously for all cells. The rules are as follows according to Wikipedia:</p>
+
+<ol>
+<li>Any live cell with fewer than two live neighbours dies, as if caused by under-population.</li>
+
+<li>Any live cell with two or three live neighbours live on to the next generation.</li>
+
+<li>Any live cell with more than three live neighbours dies, as if by overcrowding.</li>
+
+<li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+</ol>
+
+<p>The most fun aspect of this for me is starting with a clean slate and then drawing the alive cells onto the screen to see how they change. If you run this code I strongly recommend giving it a go.</p>
+<br /><div class='row'>
+
+	<div class='col-lg-12'>
+
+		<img class='img-responsive' src='/assets/img/game_of_life.png' alt='Reponsive image' />
+
 	</div>
 
-	<div class="col-lg-6">
-
-		<h4>Gen-Nam Lam</h4>		
-	  	<p>
-	  		I am a 3rd year undergraduate student of Southampton University studying Computer Science MEng. During my spare time I enjoy playing badminton and photography. I am particularly interested in mobile development.
-	  	</p>
+</div>
+		</div>
 	</div>
-
 	<div class="col-lg-3">
 		
 <h4>
@@ -99,6 +126,7 @@
 
 	</div>
 </div>
+
 
 			<hr>
 
