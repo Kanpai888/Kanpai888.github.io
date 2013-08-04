@@ -1,0 +1,34 @@
+/* Colour Scheme */
+/* Black 	#2E2824 */
+/* Orange 	#ED751F	*/
+/* White 	#F7F5F2 */
+
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background-color: #F7F5F2;
+}
+
+.navbar-brand{
+	color: #ED751F;
+}
+
+.navbar {
+	background-color: #2E2824;
+}
+
+.navbar-nav > li > a{
+	color: #F7F5F2;
+}
+
+.navbar-nav > li > a:hover, a:focus {
+	color: #ED751F;
+}
+
+a {
+	color: #2E2824;
+}
+
+a:hover, a:focus {
+	color: #ED751F;
+}
