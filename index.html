@@ -3,36 +3,69 @@ layout: default
 title: Example
 ---
 <div class="row">
-	<div class="col-lg-12">
-		<h1>My Blog</h1>
+	<div class="col-sm-12">
+		<h1 class="text-center">Gen-Nam Lam</h1>	
 		<hr>
 	</div>
 </div>
 <div class="row">
-	<div class="col-lg-9">
-	  	{% for post in site.posts %}
-		      <a href="{{ post.url }}">
-		      	<h2>
-		      		{{ post.title }}
-		      	</h2>
-		      </a>
-		      <p>
-		      	<b>{{ post.date | date_to_string }}</b> {{ post.excerpt }} 
-		      </p>		    
-	  	{% endfor %}		
-	</div>
-	<div class="col-lg-3">
-		<div class="row">
-			<div class="col-lg-12">
-				{% include contact.html %}
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12">
-				{% include affiliate.html %}
-			</div>
-		</div>
-	</div>
-	
 
+	<div class="col-sm-8 col-sm-offset-2">
+	  	<p class="text-justify">
+	  		I am a 4th year student of the University of Southampton studying Computer Science MEng. My primary skills are with Java, Python and general web developement. My interests are in mobile development. I'm always looking for new opportunities so feel free to get in touch.
+	  		<br><br>
+	  		During my spare time I enjoy playing badminton, squash and photography. You can find me through the services below.
+	  	</p>
+	</div>
+
+</div>
+
+<div class="row hidden-xs">
+	<div class=" col-sm-1 col-sm-offset-3">
+		<a href="https://twitter.com/Kanpai888">
+			<img img src="/assets/icons/twitter.png" alt="Twitter" height="42" width="42"> 
+		</a> 
+	</div>
+	<div class="col-sm-1">
+		<a href="https://plus.google.com/103713859111269028349/posts">
+			<img img src="/assets/icons/google-plus.png" alt="Google" height="42" width="42"> 
+		</a> 
+	</div>
+	<div class="col-sm-1">
+		<a href="https://www.facebook.com/gennamlam">
+			<img img src="/assets/icons/facebook.png" alt="Facebook" height="42" width="42"> 
+		</a> 
+	</div>
+	<div class="col-sm-1">
+		<a href="http://uk.linkedin.com/pub/gen-nam-lam/4a/67b/72a">
+			<img img src="/assets/icons/linkedin.png" alt="Linkedin" height="42" width="42"> 
+		</a> 
+	</div>
+	<div class="col-sm-1">
+		<a href="mailto:gennamlam@gmail.com">
+			<img img src="/assets/icons/mobileme.png" alt="Linkedin" height="42" width="42"> 
+		</a>
+	</div>
+</div>
+
+<div class="row visible-xs">
+	<div class="col-xs-12 ">
+		<div class="center-block">
+			<a href="https://twitter.com/Kanpai888">
+				<img img src="/assets/icons/twitter.png" alt="Twitter" height="42" width="42"> 
+			</a>
+			<a href="https://plus.google.com/103713859111269028349/posts">
+				<img img src="/assets/icons/google-plus.png" alt="Google" height="42" width="42"> 
+			</a> 
+			<a href="https://www.facebook.com/gennamlam">
+				<img img src="/assets/icons/facebook.png" alt="Facebook" height="42" width="42"> 
+			</a>
+			<a href="http://uk.linkedin.com/pub/gen-nam-lam/4a/67b/72a">
+				<img img src="/assets/icons/linkedin.png" alt="Linkedin" height="42" width="42"> 
+			</a> 
+			<a href="mailto:gennamlam@gmail.com">
+				<img img src="/assets/icons/mobileme.png" alt="Linkedin" height="42" width="42"> 
+			</a>
+		</div>
+	</div>
 </div>

@@ -39,11 +39,19 @@ body {
 	background-color: #2E2824;
 }
 
+.text-justify{
+	text-align: justify;
+}
+
 a {
 	color: #2E2824;
 }
 
 a:hover, a:focus {
 	color: #ED751F;
+}
+
+footer {
+	color: #C4C4C4;
 }
 
