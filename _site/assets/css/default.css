@@ -21,11 +21,12 @@ body {
 	background-color: #2E2824;
 }
 
-.navbar-toggle:hover, .navbar-toggle:focus {
+.navbar-toggle:hover{
 	background-color: #ED751F;
 }
 
-.navbar-toggle{
+.icon-bar{
+	background-color: #F7F5F2;
 	color: #F7F5F2;
 }
 
