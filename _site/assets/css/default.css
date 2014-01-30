@@ -25,12 +25,17 @@ body {
 	background-color: #ED751F;
 }
 
+.navbar-toggle{
+	color: #F7F5F2;
+}
+
 .navbar-nav > li > a{
 	color: #F7F5F2;
 }
 
 .navbar-nav > li > a:hover, a:focus {
 	color: #ED751F;
+	background-color: #2E2824;
 }
 
 a {
