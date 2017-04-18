@@ -1,43 +1,32 @@
 ---
 layout: default
-title: Example
+title: Blog
 ---
-<div class="row">
-	<div class="col-sm-12">
-		<h1 class="text-center">Gen-Nam Lam</h1>	
-		<hr>
-	</div>
-</div>
-<div class="row">
-
-	<div class="col-sm-8 col-sm-offset-2">
-	  	<p class="text-justify">
-	  		I am a 4th year student of the University of Southampton studying Computer Science MEng. My primary skills are with Java, Python and general web developement. My interests are in mobile development. I'm always looking for new opportunities so feel free to get in touch.
-	  		<br><br>
-	  		During my spare time I enjoy playing badminton, squash and photography. You can find me through the services below.
-	  	</p>
-	</div>
-
-</div>
-
-<div class="row">
-	<div class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3">
-		<div class="center-block">
-			<a href="https://twitter.com/Kanpai888">
-				<img img src="/assets/icons/twitter.png" alt="Twitter" height="42" width="42"> 
-			</a>
-			<a href="https://plus.google.com/103713859111269028349/posts">
-				<img img src="/assets/icons/google-plus.png" alt="Google" height="42" width="42"> 
-			</a> 
-			<a href="https://www.facebook.com/gennamlam">
-				<img img src="/assets/icons/facebook.png" alt="Facebook" height="42" width="42"> 
-			</a>
-			<a href="http://uk.linkedin.com/pub/gen-nam-lam/4a/67b/72a">
-				<img img src="/assets/icons/linkedin.png" alt="Linkedin" height="42" width="42"> 
-			</a> 
-			<a href="mailto:gennamlam@gmail.com">
-				<img img src="/assets/icons/mobileme.png" alt="Linkedin" height="42" width="42"> 
-			</a>
+<div class="mdl-grid portfolio-max-width">
+	{% for post in site.posts %}
+	<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+		<div class="mdl-cell mdl-cell--8-col">			
+			<h2 class="mdl-card__title-text">
+				{{ post.title }}
+			</h2>
+			<div class="mdl-card__supporting-text padding-top">
+				<span>Posted {{ post.date | date_to_string }}</span>	
+			</div>
+			<div class="mdl-card__supporting-text no-left-padding">
+				<p>{{ post.excerpt }}</p>
+				{% if page.categories %}
+					<span>Category: {{ post.categories }} </span>
+				{% endif %}
+			</div>
+		</div>
+		{% if post.previewimage %}
+		<div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
+			<img class="article-image" src="{{ post.previewimage }}" border="0" alt="">
+		</div>
+		{% endif %}
+		<div class="mdl-card__actions mdl-card--border">
+			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ post.url }}">Read more</a>
 		</div>
 	</div>
+	{% endfor %}	
 </div>
