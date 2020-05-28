@@ -1,5 +1,5 @@
 
 safe: true
 lsi: false
-highlighter: pygments
+highlighter: rouge
 repository: Kanpai888/Kanpai888.github.io
