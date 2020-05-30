@@ -1,15 +1,12 @@
 ---
-layout: textpost
+layout: post
 title: Conway’s Game of Life
-previewimage: "/assets/img/game-of-life-preview.png"
+title-image: "/assets/img/game-of-life.png"
 published: true
 categories: [project, coding]
 tags: [game of life]
 excerpt: This is a simple implementation of the Game of Life in Java. I coded this because I wanted something quick and simple to implement as I have been working recently and didn’t have time to work on anything large. You can download a executable jar here to try it out. Or you can find a video of the program running.
 ---
-
-<div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding">
-<p>
 
 This is a simple implementation of the Game of Life in Java. I coded this because I wanted something quick and simple to implement as I have been working recently and didn’t have time to work on anything large. You can download a executable jar here to try it out. Or you can find a video of the program running.
 
@@ -21,10 +18,3 @@ The Game of Life can be envisioned as a two dimensional grid that contains cells
 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
 The most fun aspect of this for me is starting with a clean slate and then drawing the alive cells onto the screen to see how they change. If you run this code I strongly recommend giving it a go.
-</p>
-
-<div class="mdl-card__media">
-	<img class="article-image" src="/assets/img/game-of-life.png" border="0" alt="">
-</div>
-<br>
-

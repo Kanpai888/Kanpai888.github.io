@@ -1,4 +1,34 @@
 ---
 title: Blog
+layout: default
 ---
-Update in progress
+
+<div class="row">
+	<div class="col-md-8 blog-main">
+		{% for post in site.posts %}
+		<a href="{{ post.url }}">
+			<h3 class="blog-post-title">
+				{{ post.title }}
+			</h3>
+		</a>
+		
+		<p class="blog-post-meta">{{ post.date | date_to_string }}</p>
+		{% if post.title-image %}
+			<img src="{{ post.title-image }}" class="img-fluid" alt="Responsive image">
+			<p></p>
+		{% endif %}
+		<p>
+			{{ post.excerpt }} 
+		</p>
+		<hr>	    
+		{% endfor %}	
+
+		<!-- <nav class="blog-pagination">
+			<a class="btn btn-outline-primary" href="#">Older</a>
+			<a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+		</nav> -->
+
+	</div><!-- /.blog-main -->
+
+    {% include sidebar.html %}
+</div><!-- /.row -->
